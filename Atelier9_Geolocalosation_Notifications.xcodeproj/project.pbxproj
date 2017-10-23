@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2D676F791F98A92600540ED4 /* FunAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunAnnotation.swift; sourceTree = "<group>"; };
-		2D8392771F974B5F00968C63 /* Atelier8_MapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier8_MapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8392771F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier9_Geolocalosation_Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D83927A1F974B5F00968C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D83927C1F974B5F00968C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D83927F1F974B5F00968C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		2D83926E1F974B5F00968C63 = {
 			isa = PBXGroup;
 			children = (
-				2D8392791F974B5F00968C63 /* Atelier8_MapView */,
+				2D8392791F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications */,
 				2D8392781F974B5F00968C63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		2D8392781F974B5F00968C63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D8392771F974B5F00968C63 /* Atelier8_MapView.app */,
+				2D8392771F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D8392791F974B5F00968C63 /* Atelier8_MapView */ = {
+		2D8392791F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications */ = {
 			isa = PBXGroup;
 			children = (
 				2D83928C1F974B9700968C63 /* Ressources */,
@@ -71,7 +71,7 @@
 				2D8392831F974B5F00968C63 /* LaunchScreen.storyboard */,
 				2D8392861F974B5F00968C63 /* Info.plist */,
 			);
-			path = Atelier8_MapView;
+			path = Atelier9_Geolocalosation_Notifications;
 			sourceTree = "<group>";
 		};
 		2D83928C1F974B9700968C63 /* Ressources */ = {
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D8392761F974B5F00968C63 /* Atelier8_MapView */ = {
+		2D8392761F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D8392891F974B5F00968C63 /* Build configuration list for PBXNativeTarget "Atelier8_MapView" */;
+			buildConfigurationList = 2D8392891F974B5F00968C63 /* Build configuration list for PBXNativeTarget "Atelier9_Geolocalosation_Notifications" */;
 			buildPhases = (
 				2D8392731F974B5F00968C63 /* Sources */,
 				2D8392741F974B5F00968C63 /* Frameworks */,
@@ -120,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = Atelier8_MapView;
+			name = Atelier9_Geolocalosation_Notifications;
 			productName = Atelier8_MapView;
-			productReference = 2D8392771F974B5F00968C63 /* Atelier8_MapView.app */;
+			productReference = 2D8392771F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D8392721F974B5F00968C63 /* Build configuration list for PBXProject "Atelier8_MapView" */;
+			buildConfigurationList = 2D8392721F974B5F00968C63 /* Build configuration list for PBXProject "Atelier9_Geolocalosation_Notifications" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D8392761F974B5F00968C63 /* Atelier8_MapView */,
+				2D8392761F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 				DEVELOPMENT_TEAM = FP7R49G877;
 				INFOPLIST_FILE = Atelier8_MapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier8-MapView";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier9-Geolocalosation-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +337,7 @@
 				DEVELOPMENT_TEAM = FP7R49G877;
 				INFOPLIST_FILE = Atelier8_MapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier8-MapView";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier9-Geolocalosation-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8392721F974B5F00968C63 /* Build configuration list for PBXProject "Atelier8_MapView" */ = {
+		2D8392721F974B5F00968C63 /* Build configuration list for PBXProject "Atelier9_Geolocalosation_Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D8392871F974B5F00968C63 /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8392891F974B5F00968C63 /* Build configuration list for PBXNativeTarget "Atelier8_MapView" */ = {
+		2D8392891F974B5F00968C63 /* Build configuration list for PBXNativeTarget "Atelier9_Geolocalosation_Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D83928A1F974B5F00968C63 /* Debug */,
