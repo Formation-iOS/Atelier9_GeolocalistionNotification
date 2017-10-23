@@ -31,4 +31,12 @@ class FunAnnotation : NSObject, MKAnnotation {
     var zoom : CLLocationDegrees {
         return mapPoint.zoom
     }
+    
+    var visibleRegion : MKCoordinateRegion {
+        var mapRegion = MKCoordinateRegion()
+        mapRegion.center = self.coordinate
+        mapRegion.span.latitudeDelta = self.zoom
+        mapRegion.span.longitudeDelta = self.zoom
+        return mapRegion
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3094151F9DFB7000AFF5DE /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */; };
 		2D676F7A1F98A92600540ED4 /* FunAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D676F791F98A92600540ED4 /* FunAnnotation.swift */; };
 		2D83927B1F974B5F00968C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D83927A1F974B5F00968C63 /* AppDelegate.swift */; };
 		2D83927D1F974B5F00968C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D83927C1F974B5F00968C63 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		2D3094161F9E09A600AFF5DE /* ParcoursVelo.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = ParcoursVelo.gpx; sourceTree = "<group>"; };
+		2D3094171F9E09A600AFF5DE /* Position.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Position.gpx; sourceTree = "<group>"; };
 		2D676F791F98A92600540ED4 /* FunAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunAnnotation.swift; sourceTree = "<group>"; };
 		2D8392771F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier9_Geolocalosation_Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D83927A1F974B5F00968C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		2D83928C1F974B9700968C63 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				2D3094161F9E09A600AFF5DE /* ParcoursVelo.gpx */,
+				2D3094171F9E09A600AFF5DE /* Position.gpx */,
 				2D83928D1F974BB500968C63 /* AmazingPlaces.plist */,
 			);
 			path = Ressources;
@@ -94,6 +100,7 @@
 		2D8392921F97531500968C63 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,6 +145,11 @@
 					2D8392761F974B5F00968C63 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -178,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3094151F9DFB7000AFF5DE /* UserLocationManager.swift in Sources */,
 				2D83927D1F974B5F00968C63 /* ViewController.swift in Sources */,
 				2D83927B1F974B5F00968C63 /* AppDelegate.swift in Sources */,
 				2D676F7A1F98A92600540ED4 /* FunAnnotation.swift in Sources */,
@@ -320,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FP7R49G877;
-				INFOPLIST_FILE = Atelier8_MapView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Atelier9_Geolocalosation_Notifications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier9-Geolocalosation-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FP7R49G877;
-				INFOPLIST_FILE = Atelier8_MapView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Atelier9_Geolocalosation_Notifications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier9-Geolocalosation-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";

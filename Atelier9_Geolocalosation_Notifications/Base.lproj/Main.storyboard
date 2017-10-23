@@ -5,18 +5,19 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Atelier8_MapView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Atelier9_Geolocalosation_Notifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-AS-Xt8">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-AS-Xt8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="nAZ-wG-bBd"/>
@@ -47,6 +48,7 @@
                             <constraint firstAttribute="bottom" secondItem="bkP-AS-Xt8" secondAttribute="bottom" id="paJ-vb-I02"/>
                             <constraint firstItem="bkP-AS-Xt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u5h-5h-zsk"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="SuS-Eu-T1c"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="bkP-AS-Xt8" id="Coj-AK-R8a"/>

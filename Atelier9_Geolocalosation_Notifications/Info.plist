@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Vous prévenir quand vous approchez de lieux marrants</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Vous prévenir quand vous approchez de lieux marrants</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

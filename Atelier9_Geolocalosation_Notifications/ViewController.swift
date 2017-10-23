@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class ViewController: UIViewController {
 
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.initMapPoint()
         self.zoomToInitialRegion(animated: false)
+        UserLocationManager.shared.askUserLocationPermission()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,11 +51,12 @@ class ViewController: UIViewController {
         self.zoomToInitialRegion()
     }
     private func zoom(on annotation: FunAnnotation) {
-        var mapRegion = MKCoordinateRegion()
-        mapRegion.center = annotation.coordinate
-        mapRegion.span.latitudeDelta = annotation.zoom
-        mapRegion.span.longitudeDelta = annotation.zoom
-        mapView.setRegion(mapRegion, animated: true)
+        mapView.setRegion(annotation.visibleRegion, animated: true)
+    }
+    
+    func display(region: CLCircularRegion) {
+        let overlay = MKCircle(center: region.center, radius: region.radius)
+        mapView.add(overlay)
     }
 }
 
@@ -94,6 +97,12 @@ extension ViewController : MKMapViewDelegate {
         UIView.animate(withDuration: 0.4) {
             self.unzoomButton.isHidden = !isZoomed
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKCircleRenderer(overlay: overlay)
+        renderer.fillColor = UIColor.blue.withAlphaComponent(0.4)
+        return renderer
     }
 }
 
