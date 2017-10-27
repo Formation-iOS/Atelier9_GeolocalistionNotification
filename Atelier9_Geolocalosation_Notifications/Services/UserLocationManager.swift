@@ -69,6 +69,7 @@ extension UserLocationManager {
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print ("Enter region \(region)")
+        self.notifyUserFor(region: region)
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
@@ -84,8 +85,12 @@ extension UserLocationManager {
         if let region = region as? CLCircularRegion,
             let location = manager.location {
             if region.contains(location.coordinate) {
-                print ("Already in region \(region.identifier)")
+                self.notifyUserFor(region: region)
             }
         }
+    }
+    
+    func notifyUserFor (region: CLRegion) {
+        NotificationManager.shared.sendNotification(for: region.identifier)
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D3094151F9DFB7000AFF5DE /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */; };
+		2D3094191F9E2E3200AFF5DE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3094181F9E2E3200AFF5DE /* NotificationManager.swift */; };
 		2D676F7A1F98A92600540ED4 /* FunAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D676F791F98A92600540ED4 /* FunAnnotation.swift */; };
 		2D83927B1F974B5F00968C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D83927A1F974B5F00968C63 /* AppDelegate.swift */; };
 		2D83927D1F974B5F00968C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D83927C1F974B5F00968C63 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 		2D3094161F9E09A600AFF5DE /* ParcoursVelo.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = ParcoursVelo.gpx; sourceTree = "<group>"; };
 		2D3094171F9E09A600AFF5DE /* Position.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Position.gpx; sourceTree = "<group>"; };
+		2D3094181F9E2E3200AFF5DE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		2D676F791F98A92600540ED4 /* FunAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunAnnotation.swift; sourceTree = "<group>"; };
 		2D8392771F974B5F00968C63 /* Atelier9_Geolocalosation_Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier9_Geolocalosation_Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D83927A1F974B5F00968C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2D3094141F9DFB7000AFF5DE /* UserLocationManager.swift */,
+				2D3094181F9E2E3200AFF5DE /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -147,7 +150,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3094191F9E2E3200AFF5DE /* NotificationManager.swift in Sources */,
 				2D3094151F9DFB7000AFF5DE /* UserLocationManager.swift in Sources */,
 				2D83927D1F974B5F00968C63 /* ViewController.swift in Sources */,
 				2D83927B1F974B5F00968C63 /* AppDelegate.swift in Sources */,
